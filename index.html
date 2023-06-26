@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>project-test-Elthan-Ramanda</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1 class="logo">Company</h1>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="#">ABOUT</a>
+          <ul class="dropdown">
+            <li><a href="#">HISTORY</a></li>
+            <li><a href="#">VISSION MISSION</a></li>
+            </ul>
+          </li>
+          <li><a href="#">OUR WORK</a></li>
+          <li><a href="#">OUR TEAM</a></li>
+          <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+</header>
+<div class="container">
+  <div class="content-slide">
+      <div class="imgslide fade">
+          <img src="img/bg.jpg" alt="">
+      </div>
+
+      <div class="imgslide fade">
+          <img src="img/about-bg.jpg" alt="">
+      </div>
+      <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+      <a class="next" onClick="nextslide(1)">&#10095;</a> 
+  </div>
+  <div class="page">
+      <span class="dot" onClick="dotslide(1)"></span>
+      <span class="dot" onClick="dotslide(2)"></span>
+  </div>
+  <div class="overlay">
+    <p class="overlay-text">This is a place where technology & <br> creativity fused into digital chemistry</p>
+  </div>
+  <section class="content">
+    <h2>OUR VALUES</h2>
+    <div class="box-container">
+        <section class="box box1">
+            <img src="img/lightbulb-o.png" alt="lightbulb-o">
+            <h3>INNOVATIVE</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem rutrum, aliquet ligula et, tristique nisi.</p>
+        </section>
+        <section class="box box2">
+            <img src="img/bank.png" alt="bank">
+            <h3>LOYALTY</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem rutrum, aliquet ligula et, tristique nisi.</p>
+        </section>
+        <section class="box box3">
+            <img src="img/balance-scale.png" alt="balance-scale">
+            <h3>RESPECT</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae sem rutrum, aliquet ligula et, tristique nisi.</p>
+        </section>
+      </div>
+  </section>
+  <section class="contact-us">
+  <h2>CONTACT US</h2>
+  <form id="contact-form">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name">
+      <div class="error-message" id="name-error"></div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+      <div class="error-message" id="email-error"></div>
+    </div>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <div class="error-message" id="message-error"></div>
+    </div>
+    <button class="submit-button" type="submit">SUBMIT</button>
+  </form>
+</section>
+<footer>
+    <p>Copyright &copy; 2016. PT Company</p>
+    <div class="footer-img">
+        <section class = "footer-logos1">
+            <img src="img/facebook-official.png" alt="facebook-official">
+        </section>
+        <section class = "footer-logos2">
+            <img src="img/twitter.png" alt="twitter">
+        </section>
+    </div>
+</footer>
+</div>
+</body>
+</html>
